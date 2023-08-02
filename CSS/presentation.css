@@ -12,6 +12,7 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
+    align-items:center;
     background-color:var(--background2);
 }
 
@@ -20,6 +21,7 @@
     font-size: 24px;
     font-weight: 700;
     text-align:center;
+    width:86%;
 }
 
 .presentation p
@@ -28,6 +30,7 @@
     font-weight: 300;
     color: var(--grey);
     text-align:center;
+    width:98%;
 }
 
 .presentation button
