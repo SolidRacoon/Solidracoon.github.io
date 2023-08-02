@@ -1,30 +1,8 @@
-:root {
-    --grey-2:#EAEAEA;
+@import 'header.css';
+
+body
+{
+margin:0px 0px 0px 0px;
 }
 
-header
-{
-    width: 100%;
-    height: 63px;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-}
 
-.header_img
-{
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    display:flex;
-    justify-content:center;
-    z-index: 1;
-}
-
-.header_localisation
-{
-    width: 100%;
-    height: 50px;
-    display:flex;
-    justify-content:center;
-    background-color: var(--grey-2);
-}
