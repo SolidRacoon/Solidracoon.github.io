@@ -26,5 +26,13 @@ header
     height: 50px;
     display:flex;
     justify-content:center;
+    align-items:center;
+    gap:1.063rem;
     background-color: var(--grey-2);
+}
+
+.header_localisation_pin
+{
+    width:0.75rem;
+    height:1rem;
 }
