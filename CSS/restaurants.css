@@ -6,16 +6,18 @@
 .restaurants
 {
     background:var(--background2);
+    display: flex;
+    flex-direction: column;
 
 }
 
-.restaurant h1
+.restaurants h1
 {
     font-size: 24px;
     font-weight: 700;
 }
 
-.restaurant p
+.restaurants p
 {
     font-size: 17px;
     font-weight: 300;
@@ -26,9 +28,10 @@
     display:flex;
     flex-direction:column;
     align-items: center;
+    gap: 10px;
 }
 
-.restaurants_bloc_cards {
+.bloc_cards {
     background-color: white;
     border-radius: 15px;
     margin: 5px;
@@ -36,44 +39,93 @@
     padding: 0px;
 }
 
-.restaurants_bloc_cards_img
+.cards_img
 {
     width: 100%;
+    height:231px;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 
-.restaurants_block_cards_box-bottom_txt
+.cards_box-bottom
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.box-bottom_txt
 {
  display:flex;
  flex-direction:column;
 }
 
-.restaurants_block_cards_box-bottom_txt h2
+.box-bottom_txt h2
 {
  margin:16px 0px 0px 15px;
 }
 
-.restaurants_block_cards_box-bottom_txt p
+.box-bottom_txt p
 {
  margin:4px 0px 10px 15px;
 }
 
-.restaurants_block_cards_box-bottom_hearth
+.box-bottom_hearth
 {
-    width:33%;
-    display:flex;
-    justify-content:flex-end;
+
 }
 
-.restaurants_block_cards_box-bottom_hearth img
+.box-bottom_hearth img
 {
-    height:20px;
-    margin-top: 45%;
+    height:21px;
+    width: 22px;
+    position: relative;
+    top: -1px;
+
 }
 
-.restaurants_bloc_cards_box-bottom
+.annimation
 {
-    display:flex;
+    transition: background-color 0.3s;
+    width: 21px;
+    height: 19px;
+    position: relative;
+    top: 48px;
+    right:5px;
 }
 
+.annimation:hover
+{
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    animation: fillAnimation 1s forwards;
+}
 
+@keyframes fillAnimation
+{
+    0%
+    {
+        height: 0;
+    }
+    100%
+    {
+        height: 25%;
+    }
+}
+
+.annimation:not(:hover) {
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    animation: reverseFillAnimation 1s forwards;
+}
+
+/* Keyframes for the reverse fill animation */
+@keyframes reverseFillAnimation
+{
+    0%
+    {
+        height: 25%;
+    }
+
+    100%
+    {
+        height: 0;
+    }
+}

@@ -31,7 +31,7 @@ header
     background-color: var(--grey-2);
 }
 
-.header_localisation_pin
+.localisation_pin
 {
     width:0.75rem;
     height:1rem;
