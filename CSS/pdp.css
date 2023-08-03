@@ -30,3 +30,29 @@ footer
 {
     margin:3.5px;
 }
+
+@media screen and (min-width: 1024px)
+{
+
+    footer
+    {
+       flex-direction: row-reverse;
+       height:7.125rem;
+       padding: 1.875rem 1.563rem 1.875rem 1.563rem;
+       align-items: end;
+    }
+    .footer_txt
+    {
+        flex-direction: row;
+        margin:0px;
+        gap:20px;
+    }
+
+    .footer_logo
+    {
+        width:8.125rem;
+        margin: 22px 0px 0px 22px
+
+    }
+
+}

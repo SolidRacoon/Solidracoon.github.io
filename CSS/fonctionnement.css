@@ -24,6 +24,7 @@
     flex-direction:column;
     align-items:center;
     gap:24px;
+    padding-bottom:68px;
 }
 
 .box_button
@@ -72,5 +73,30 @@
 {
     font-size: 16px;
     font-weight: 500;
+
+}
+
+
+
+@media screen and (min-width: 1024px)
+{
+    .fonctionnement
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0rem 9.313rem 0rem 9.313rem;
+    }
+    .fonctionnement_box
+    {
+        flex-direction:row;
+        justify-content:center;
+        gap:1.5rem;
+    }
+
+    .box_button
+    {
+        width:20.156rem;
+    }
+
 
 }

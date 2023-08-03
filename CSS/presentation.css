@@ -22,6 +22,7 @@
     font-weight: 700;
     text-align:center;
     width:86%;
+    padding-top:39px;
 }
 
 .presentation p
@@ -30,7 +31,7 @@
     font-weight: 300;
     color: var(--grey);
     text-align:center;
-    width:98%;
+    width:86%;
 }
 
 .presentation button
@@ -40,7 +41,7 @@
     border-radius: 20px;
     border-style: none;
     height:3.125rem;
-    width:62%;
+    width:218px;;
     color:white;
     margin-left:auto;
     margin-right:auto;

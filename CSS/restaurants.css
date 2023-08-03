@@ -15,6 +15,7 @@
 {
     font-size: 24px;
     font-weight: 700;
+    padding-left:10px;
 }
 
 .restaurants p
@@ -129,4 +130,28 @@
     {
         height: 0;
     }
+}
+
+
+@media screen and (min-width: 1024px)
+{
+    .restaurants
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 9.313rem 0rem 9.313rem;
+    }
+
+    .restaurants_bloc
+    {
+        flex-direction:row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .bloc_cards
+    {
+         width:47%;
+    }
+
 }
