@@ -1,0 +1,192 @@
+@import 'header.css';
+@import 'presentation.css';
+@import 'fonctionnement.css';
+@import 'restaurants.css';
+@import 'pdp.css';
+@import 'style.css';
+
+:root {
+    --lineColor:#99E2D0;
+}
+
+header
+{
+  height:59px;
+}
+.main button
+{
+    background:var(--backgroundButton);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border-style: none;
+    height:3.125rem;
+    width:218px;;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:2.5rem;
+    font-weight: 500;
+    margin-top:2.5rem;
+}
+
+.main_img
+{
+    width:100%;
+}
+
+.main_body
+{
+    border-radius: 20px 20px 0px 0px;
+    background:var(--background2);
+    position: relative;
+    top: -2.375rem;
+    z-index: 1;
+    display:flex;
+    flex-direction:column;
+    margin-bottom: -39px;
+    margin-right:auto;
+    margin-left:auto;
+    max-width: 1055px;
+}
+
+.main_body h1
+{
+    margin:0px;
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-weight: 400;
+    padding-top:2rem;
+    padding-left:1.063rem;
+}
+
+.body_header
+{
+ display:flex;
+ gap:10%;
+}
+
+
+
+.body_cards
+{
+    display:flex;
+    flex-direction:column;
+    width:92%;
+    margin:auto;
+}
+
+.body_cards h2
+{
+    font-weight: 300;
+    border-bottom: 0.188rem solid var(--lineColor);
+    width: 2.5rem;
+}
+
+.cards_by3
+{
+ display:flex;
+ flex-direction:column;
+ gap:0.75rem;
+}
+
+.by3_by1
+{
+    background:white;
+    border-radius: 20px;
+}
+
+.by3_by1 h3
+{
+ padding: 15px 0px 0px 15px;
+ margin: 0px;
+}
+
+.by1_content
+{
+    display:flex;
+    padding: 0px 0px 0px 15px;
+}
+
+.by1_desc
+{
+    width:77%;
+    margin: 0;
+}
+
+.content_prix
+{
+    width:33%;
+    text-align: end;
+    padding-right:0.938rem;
+    margin: 0;
+}
+
+/* Annimation parameter */
+
+.hearth_img
+{
+    height:19px;
+}
+.annimation
+{
+    top: 43px;
+    right: 16px;
+}
+
+.annimation:hover
+{
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    animation: fillAnimation 1s forwards;
+}
+.annimation:not(:hover) {
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    animation: reverseFillAnimation 1s forwards;
+}
+
+/* ajustement de taille */
+
+@media screen and (min-width: 1266px)
+{
+    .main_body
+    {
+        top:-23.4rem;
+    }
+
+    .main
+    {
+        position: relative;
+        top: -300px;
+    }
+
+    header
+    {
+        z-index: 1;
+        position: relative;
+        background-color:white;
+    }
+
+    .header_img
+    {
+     box-shadow: none;
+    }
+
+    .body_header
+    {
+     justify-content: center;
+    }
+
+    .by3_by1
+    {
+     width: 80%;
+    }
+
+    .body_cards
+    {
+     margin: 0% 14% 0% 14%;
+    }
+
+    .main
+    {
+     height: 1731px;
+    }
+}
