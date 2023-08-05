@@ -1,18 +1,18 @@
-@import 'header.css';
-@import 'presentation.css';
-@import 'fonctionnement.css';
-@import 'restaurants.css';
-@import 'pdp.css';
 @import 'style.css';
 
 :root {
     --lineColor:#99E2D0;
 }
 
+
+
+
 header
 {
   height:59px;
 }
+
+
 .main button
 {
     background:var(--backgroundButton);
@@ -32,21 +32,22 @@ header
 .main_img
 {
     width:100%;
+    position:relative;
+    z-index:-1;
 }
 
 .main_body
 {
     border-radius: 20px 20px 0px 0px;
     background:var(--background2);
-    position: relative;
-    top: -2.375rem;
-    z-index: 1;
     display:flex;
     flex-direction:column;
-    margin-bottom: -39px;
     margin-right:auto;
     margin-left:auto;
-    max-width: 1055px;
+    max-width: 1376px;
+    margin-top: -3rem;
+
+
 }
 
 .main_body h1
@@ -119,6 +120,8 @@ header
     text-align: end;
     padding-right:0.938rem;
     margin: 0;
+    font-size: 15.043px;
+    font-weight: 700;
 }
 
 /* Annimation parameter */
@@ -147,17 +150,6 @@ header
 
 @media screen and (min-width: 1266px)
 {
-    .main_body
-    {
-        top:-23.4rem;
-    }
-
-    .main
-    {
-        position: relative;
-        top: -300px;
-    }
-
     header
     {
         z-index: 1;
@@ -167,26 +159,33 @@ header
 
     .header_img
     {
-     box-shadow: none;
+        box-shadow: none;
+    }
+
+    .main_img
+    {
+        margin-top: -25rem;
+        clip-path: inset(0 0 20rem 0);
+    }
+
+    .main_body
+    {
+        margin-top: -24rem;
     }
 
     .body_header
     {
-     justify-content: center;
+        justify-content: center;
     }
 
     .by3_by1
     {
-     width: 80%;
+        width: 80%;
     }
 
     .body_cards
     {
-     margin: 0% 14% 0% 14%;
+        margin: 0% 14% 0% 14%;
     }
 
-    .main
-    {
-     height: 1731px;
-    }
 }
