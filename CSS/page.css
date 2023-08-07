@@ -189,7 +189,6 @@ header
     {
         margin: 0% 14% 0% 14%;
     }
-
 }
 
 /* Annimations */
@@ -212,7 +211,7 @@ header
 
 @keyframes remplissage {
   from {
-    left:7%;
+    left:6.25rem;
   }
   to {
     left:0%;
@@ -224,7 +223,7 @@ header
     left:0%;
   }
   to {
-    left:7%;
+    left:6.25rem;
   }
 }
 
