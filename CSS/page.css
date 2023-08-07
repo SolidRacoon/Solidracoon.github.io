@@ -57,7 +57,7 @@ header
     font-size: 28px;
     font-weight: 400;
     padding-top:2rem;
-    padding-left:1.063rem;
+    padding-left:0.4rem;
 }
 
 .body_header
@@ -85,15 +85,25 @@ header
 
 .cards_by3
 {
- display:flex;
- flex-direction:column;
- gap:0.75rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.75rem;
+
 }
 
 .by3_by1
 {
     background:white;
     border-radius: 20px;
+    cursor: pointer;
+ overflow :hidden;
+}
+
+.check
+{
+    margin-top: -38px;
+    position: relative;
+
 }
 
 .by3_by1 h3
@@ -110,18 +120,20 @@ header
 
 .by1_desc
 {
-    width:77%;
+    width:90%;
     margin: 0;
 }
 
 .content_prix
 {
-    width:33%;
+    width:10%;
     text-align: end;
     padding-right:0.938rem;
     margin: 0;
     font-size: 15.043px;
     font-weight: 700;
+    position:relative;
+    right:-64px;
 }
 
 /* Annimation parameter */
@@ -134,16 +146,6 @@ header
 {
     top: 43px;
     right: 16px;
-}
-
-.annimation:hover
-{
-    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-    animation: fillAnimation 1s forwards;
-}
-.annimation:not(:hover) {
-    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-    animation: reverseFillAnimation 1s forwards;
 }
 
 /* ajustement de taille */
@@ -188,4 +190,86 @@ header
         margin: 0% 14% 0% 14%;
     }
 
+}
+
+/* Annimations */
+
+.annimation:hover
+{
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    animation: fillAnimation 1s forwards;
+}
+.annimation:not(:hover) {
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    animation: reverseFillAnimation 1s forwards;
+}
+
+.checkbox
+{
+    display: none;
+}
+
+
+@keyframes remplissage {
+  from {
+    left:7%;
+  }
+  to {
+    left:0%;
+  }
+}
+
+@keyframes reverseRemplissage {
+  from {
+    left:0%;
+  }
+  to {
+    left:7%;
+  }
+}
+
+.checkbox:checked + .by3_by1 .check
+{
+
+    animation: remplissage 1s forwards;
+
+}
+
+.checkbox:not(:checked) + .by3_by1 .check
+{
+
+    animation: reverseRemplissage 1s forwards;
+}
+
+@keyframes glisse
+{
+  from
+  {
+    right:-3.813;
+  }
+  to
+  {
+    right:0rem;
+  }
+}
+
+@keyframes reverseGlisse
+{
+  from
+  {
+    right:0rem;
+  }
+  to
+  {
+    right:-3.813rem;
+  }
+}
+
+.checkbox:checked + .by3_by1 .content_prix {
+  animation: glisse 1s forwards;
+}
+
+.checkbox:not(:checked) + .by3_by1 .content_prix
+{
+    animation: reverseGlisse 1s forwards;
 }
