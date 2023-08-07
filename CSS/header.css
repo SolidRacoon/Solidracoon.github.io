@@ -11,10 +11,17 @@ header
     align-items:center;
 }
 
+.header_arrow
+{
+    position: absolute;
+    left: 0%;
+    top:1rem;
+    z-index:2;
+}
 
 header h1
 {
- padding-top:39px;
+    padding-top:39px;
 }
 
 .header_img

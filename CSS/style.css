@@ -14,3 +14,8 @@ font-weight: 500;
 line-height: normal;
 }
 
+a
+{
+ text-decoration:none;
+ color:black;
+}
