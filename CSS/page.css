@@ -12,6 +12,49 @@ header
   height:59px;
 }
 
+.calque {
+  position: absolute;
+  width: 1100px;
+  height:41%;
+  max-width: 1376px;
+  border-radius: 20px 20px 0px 0px;
+  z-index: 1;
+  animation: disparition 1s ease forwards;
+}
+.calque2 {
+  position: absolute;
+  width: 1100px;
+  height:41%;
+  max-width: 1376px;
+  border-radius: 20px 20px 0px 0px;
+  z-index: 1;
+  animation: disparition 1s ease forwards;
+  animation-delay: 1s;
+}
+.calque3 {
+  position: absolute;
+  width: 1100px;
+  height:41%;
+  max-width: 1376px;
+  border-radius: 20px 20px 0px 0px;
+  z-index: 1;
+  animation: disparition 1s ease forwards;
+  animation-delay: 2s;
+}
+@keyframes disparition {
+  0% {
+
+      width: 1100px;
+      height:41%;
+
+
+  }
+  100% {
+
+        width: 1100px;
+        height:0%
+  }
+}
 
 .main button
 {
@@ -27,6 +70,10 @@ header
     margin-bottom:2.5rem;
     font-weight: 500;
     margin-top:2.5rem;
+}
+
+.main button:hover {
+  background:var(--backgroundButtonSoft);
 }
 
 .main_img

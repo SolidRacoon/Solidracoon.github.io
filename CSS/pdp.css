@@ -9,6 +9,8 @@ footer
     background:var(--vargrey);
     display:flex;
     flex-direction:column;
+    position:relative;
+    z-index:2;
 }
 
 .footer_logo

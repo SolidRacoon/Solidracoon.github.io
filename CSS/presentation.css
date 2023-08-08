@@ -2,7 +2,9 @@
 {
     --grey: #353535;
     --background2: #F6F6F6;
-    --backgroundButton:linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+    --backgroundButton:linear-gradient(175deg, rgba(255, 121, 218) 0%, rgba(147, 86, 220) 100%);
+    --backgroundButtonSoft:linear-gradient(175deg, rgba(255, 121, 218, 0.7) 0%, rgba(147, 86, 220, 0.7) 100%);
+
 }
 
 
@@ -47,4 +49,9 @@
     margin-right:auto;
     margin-bottom:3.438rem;
     font-weight: 500;
+}
+
+
+button:hover {
+  background:var(--backgroundButtonSoft);
 }
