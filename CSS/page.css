@@ -4,9 +4,6 @@
     --lineColor:#99E2D0;
 }
 
-
-
-
 header
 {
   height:59px;
@@ -17,7 +14,7 @@ header
   width: 80%;
   height:41%;
   max-width:1013px;
-  max-height:270px;
+  max-height:250px;
   z-index: 1;
   animation: disparition 1s ease forwards;
 }
@@ -26,7 +23,7 @@ header
   width: 80%;
   height:41%;
   max-width: 1013px;
-  max-height:270px;
+  max-height:250px;
   z-index: 1;
   animation: disparition 1s ease forwards;
   animation-delay: 1s;
@@ -40,6 +37,16 @@ header
   z-index: 1;
   animation: disparition 1s ease forwards;
   animation-delay: 2s;
+}
+
+.calqueS {
+  position: absolute;
+  width: 80%;
+  height:41%;
+  max-width:1013px;
+  max-height:315px;
+  z-index: 1;
+  animation: disparition 1s ease forwards;
 }
 @keyframes disparition {
   0% {
@@ -74,6 +81,8 @@ header
 
 .main button:hover {
   background:var(--backgroundButtonSoft);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.50);
+  cursor: pointer;
 }
 
 .main_img
