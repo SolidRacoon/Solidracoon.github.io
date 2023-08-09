@@ -14,7 +14,7 @@ header
 
 .calque {
   position: absolute;
-  width: 100%;
+  width: 80%;
   height:41%;
   max-width:1013px;
   max-height:270px;
@@ -23,7 +23,7 @@ header
 }
 .calque2 {
   position: absolute;
-  width: 100%;
+  width: 80%;
   height:41%;
   max-width: 1013px;
   max-height:270px;
@@ -33,7 +33,7 @@ header
 }
 .calque3 {
   position: absolute;
-  width: 100%;
+  width: 80%;
   height:41%;
   max-width: 1013px;
   max-height:270px;
