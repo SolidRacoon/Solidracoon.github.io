@@ -43,7 +43,7 @@ header
 
 .calqueS {
   position: absolute;
-  width: 100%;
+  width: 95%;
   height:41%;
   max-width:1013px;
   max-height:315px;
@@ -53,14 +53,14 @@ header
 @keyframes disparition {
   0% {
 
-      width: 100%;
+      width: 95%;
       height:41%;
 
 
   }
   100% {
 
-        width: 100%;
+        width: 95%;
         height:0%
   }
 }
