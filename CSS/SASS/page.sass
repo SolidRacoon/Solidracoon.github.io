@@ -1,0 +1,246 @@
+@import "style.css"
+
+\:root
+  --lineColor:#99E2D0
+
+header
+  height: 59px
+
+.calque
+  position: absolute
+  width: 100%
+  height: 41%
+  max-width: 1013px
+  max-height: 250px
+  z-index: 1
+  animation: disparition 1s ease forwards
+
+.calque2
+  position: absolute
+  width: 100%
+  height: 41%
+  max-width: 1013px
+  max-height: 250px
+  z-index: 1
+  animation: disparition 1s ease forwards
+  animation-delay: 1s
+
+.calque3
+  position: absolute
+  width: 100%
+  height: 41%
+  max-width: 1013px
+  max-height: 270px
+  z-index: 1
+  animation: disparition 1s ease forwards
+  animation-delay: 2s
+
+.calqueS
+  position: absolute
+  width: 95%
+  height: 41%
+  max-width: 1013px
+  max-height: 315px
+  z-index: 1
+  animation: disparition 1s ease forwards
+
+@keyframes disparition
+  0%
+    width: 95%
+    height: 41%
+
+  100%
+    width: 95%
+    height: 0%
+
+.main button
+  background: var(--backgroundButton)
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25)
+  border-radius: 20px
+  border-style: none
+  height: 3.125rem
+  width: 218px
+  color: white
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 2.5rem
+  font-weight: 500
+  margin-top: 2.5rem
+
+  &:hover
+    background: var(--backgroundButtonSoft)
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5)
+    cursor: pointer
+
+.main_img
+  width: 100%
+  position: relative
+  z-index: -1
+
+.main_body
+  border-radius: 20px 20px 0px 0px
+  background: var(--background2)
+  display: flex
+  flex-direction: column
+  margin-right: auto
+  margin-left: auto
+  max-width: 1376px
+  margin-top: -3rem
+
+  h1
+    margin: 0px
+    font-family: Shrikhand
+    font-size: 28px
+    font-weight: 400
+    padding-top: 2rem
+    padding-left: 0.4rem
+
+.body_header
+  display: flex
+  gap: 10%
+
+.body_cards
+  display: flex
+  flex-direction: column
+  width: 92%
+  margin: auto
+
+  h2
+    font-weight: 300
+    border-bottom: 0.188rem solid var(--lineColor)
+    width: 2.5rem
+
+.cards_by3
+  display: flex
+  flex-direction: column
+  gap: 0.75rem
+
+.by3_by1
+  background: white
+  border-radius: 20px
+  cursor: pointer
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+.check
+  margin-top: -38px
+  position: relative
+
+.by3_by1 h3
+  padding: 15px 0px 0px 15px
+  margin: 0px
+  width: 70%
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+.by1_content
+  display: flex
+  padding: 0px 0px 0px 15px
+
+.by1_desc
+  width: 90%
+  margin: 0
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+.content_prix
+  width: 10%
+  text-align: end
+  padding-right: 0.938rem
+  margin: 0
+  font-size: 15.043px
+  font-weight: 700
+  position: relative
+  right: -64px
+
+/* Annimation parameter
+
+.hearth_img
+  height: 19px
+
+.annimation
+  top: 43px
+  right: 16px
+
+  &:hover
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%)
+    animation: fillAnimation 1s forwards
+
+  &:not(:hover)
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%)
+    animation: reverseFillAnimation 1s forwards
+
+/* ajustement de taille
+
+@media screen and (min-width: 1266px)
+  header
+    z-index: 1
+    position: relative
+    background-color: white
+
+  .header_img
+    box-shadow: none
+
+  .main_img
+    margin-top: -25rem
+    clip-path: inset(0 0 20rem 0)
+
+  .main_body
+    margin-top: -24rem
+
+  .body_header
+    justify-content: center
+
+  .by3_by1
+    width: 80%
+
+  .body_cards
+    margin: 0% 14% 0% 14%
+
+/* Annimations
+
+.checkbox
+  display: none
+
+  &:checked + .by3_by1 .check
+    animation: remplissage 1s forwards
+
+  &:not(:checked) + .by3_by1 .check
+    animation: reverseRemplissage 1s forwards
+
+  &:checked + .by3_by1 .content_prix
+    animation: glisse 1s forwards
+
+  &:not(:checked) + .by3_by1 .content_prix
+    animation: reverseGlisse 1s forwards
+
+@keyframes remplissage
+  from
+    left: 6.25rem
+
+  to
+    left: 0%
+
+@keyframes reverseRemplissage
+  from
+    left: 0%
+
+  to
+    left: 6.25rem
+
+@keyframes glisse
+  from
+    right: -3.813
+
+  to
+    right: 0rem
+
+@keyframes reverseGlisse
+  from
+    right: 0rem
+
+  to
+    right: -3.813rem

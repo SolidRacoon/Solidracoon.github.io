@@ -1,0 +1,101 @@
+\:root
+  --background2:#F6F6F6
+
+.restaurants
+  background: var(--background2)
+  display: flex
+  flex-direction: column
+
+  h1
+    font-size: 24px
+    font-weight: 700
+    padding-left: 10px
+
+  p
+    font-size: 17px
+    font-weight: 300
+
+.restaurants_bloc
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 10px
+  padding-bottom: 60px
+
+.bloc_cards
+  background-color: white
+  border-radius: 15px
+  margin: 5px
+  width: 95%
+  padding: 0px
+
+.cards_img
+  width: 100%
+  height: 231px
+  border-radius: 15px 15px 0px 0px
+  object-fit: cover
+
+.cards_box-bottom
+  display: flex
+  justify-content: space-between
+
+.box-bottom_txt
+  display: flex
+  flex-direction: column
+
+  h2
+    margin: 16px 0px 0px 15px
+
+  p
+    margin: 4px 0px 10px 15px
+
+.hearth_img
+  height: 21px
+  width: 21px
+  position: relative
+  cursor: pointer
+
+.annimation
+  transition: background-color 0.3s
+  width: 21px
+  height: 19px
+  position: relative
+  top: 48px
+  right: 5px
+
+  &:hover
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%)
+    animation: fillAnimation 1s forwards
+
+  &:not(:hover)
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%)
+    animation: reverseFillAnimation 1s forwards
+
+@keyframes fillAnimation
+  0%
+    height: 0
+
+  100%
+    height: 25%
+
+/* Keyframes for the reverse fill animation
+@keyframes reverseFillAnimation
+  0%
+    height: 25%
+
+  100%
+    height: 0
+
+@media screen and (min-width: 1024px)
+  .restaurants
+    display: flex
+    flex-direction: column
+    padding: 0rem 9.313rem 0rem 9.313rem
+
+  .restaurants_bloc
+    flex-direction: row
+    gap: 10px
+    flex-wrap: wrap
+
+  .bloc_cards
+    width: 47%

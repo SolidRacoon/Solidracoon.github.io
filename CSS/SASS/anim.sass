@@ -1,0 +1,130 @@
+.animttl
+  position: absolute
+  background: white
+  width: 100%
+  margin: auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  color: var(--black, #101010)
+  font-family: Shrikhand
+  font-size: 16px
+  font-style: normal
+  font-weight: 400
+  line-height: normal
+  text-align: center
+  overflow: hidden
+  animation: disparait 3s forwards
+  z-index: 3
+  height: 250%
+
+  h1
+    margin-right: 5px
+    margin-left: 5px
+
+  img
+    width: 50px
+    height: 50px
+
+/* disparition
+
+@keyframes disparait
+  0%
+    width: 100%
+
+  99%
+    width: 100%
+
+  100%
+    width: 0%
+
+.chargement
+  font-size: 16px
+  animation: clignote 2s infinite
+
+@keyframes clignote
+  0%, 100%
+    opacity: 1
+
+  50%
+    opacity: 0
+
+.A, .B, .C
+  display: flex
+  align-items: center
+  gap: 12px
+
+/* bloc 1
+
+.cuissonG
+  position: relative
+  right: 1000px
+  animation: G 1s forwards
+
+@keyframes G
+  0%
+    right: 1000px
+
+  100%
+    right: 0px
+
+.cuissonD
+  position: relative
+  right: -1000px
+  animation: D 1s forwards
+
+@keyframes D
+  0%
+    right: -1000px
+
+  100%
+    right: 0px
+
+.A p
+  opacity: 0
+  animation: P 1s forwards
+
+@keyframes P
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+/* bloc 2
+
+.serviceG
+  position: relative
+  right: 1000px
+  animation: G 1s forwards
+  animation-delay: 1s
+
+.serviceD
+  position: relative
+  right: -1000px
+  animation: D 1s forwards
+  animation-delay: 1s
+
+.B p
+  opacity: 0
+  animation: P 1s forwards
+  animation-delay: 1s
+
+/* bloc 3
+
+.readyG
+  position: relative
+  right: 1000px
+  animation: G 1s forwards
+  animation-delay: 2s
+
+.readyD
+  position: relative
+  right: -1000px
+  animation: D 1s forwards
+  animation-delay: 2s
+
+.C p
+  opacity: 0
+  animation: P 1s forwards
+  animation-delay: 2s
