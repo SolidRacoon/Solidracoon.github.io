@@ -170,6 +170,7 @@ header
 {
   padding: 15px 0px 0px 15px;
   margin: 0px;
+width:70%;
   overflow :hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -180,9 +181,7 @@ header
 {
   display:flex;
   padding: 0px 0px 0px 15px;
-  overflow :hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+
 }
 
 .by1_desc
