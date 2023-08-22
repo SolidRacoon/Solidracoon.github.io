@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <script>
+        // Récupérer les valeurs du local storage
+        const coMail = localStorage.getItem("co-mail");
+        const coMdp = localStorage.getItem("co-mdp");
+
+        // Afficher les valeurs dans la console
+        console.log("E-mail:", coMail);
+        console.log("Mot de passe:", coMdp);
+
+        // Effacer les données du local storage après utilisation (facultatif)
+        localStorage.removeItem("co-mail");
+        localStorage.removeItem("co-mdp");
+    </script>
+</body>
+</html>
