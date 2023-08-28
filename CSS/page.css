@@ -166,7 +166,14 @@ header
 
 }
 
-.by3_by1 h3
+.titre{
+  font-size: 1.17em; /* Environ 18.72 pixels pour une police par défaut de 16 pixels */
+    font-weight: bold; /* Généralement en gras */
+    margin-top: 1em; /* Espacement au-dessus */
+    margin-bottom: 0.5em; /* Espacement en dessous */
+}
+
+.by3_by1 .titre
 {
   padding: 15px 0px 0px 15px;
   margin: 0px;
